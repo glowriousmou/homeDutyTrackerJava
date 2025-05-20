@@ -1,4 +1,4 @@
-package com.homeDutyTracker.domain;
+package com.oumou.homeDutyTracker.domain;
 
 public class Enfant extends Utilisateur {
     public Enfant( String prenom, String nom,  String email, String motPasse) {

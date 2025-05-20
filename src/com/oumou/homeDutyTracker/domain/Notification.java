@@ -1,4 +1,4 @@
-package com.homeDutyTracker.domain;
+package com.oumou.homeDutyTracker.domain;
 
 public class Notification {
     private String identifiant;

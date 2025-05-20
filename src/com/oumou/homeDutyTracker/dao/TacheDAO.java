@@ -1,8 +1,8 @@
-package com.homeDutyTracker.dao;
+package com.oumou.homeDutyTracker.dao;
 
-import com.homeDutyTracker.domain.Parent;
-import com.homeDutyTracker.domain.Tache;
-import com.homeDutyTracker.domain.Utilisateur;
+import com.oumou.homeDutyTracker.dao.database.ConnexionDB;
+import com.oumou.homeDutyTracker.domain.Parent;
+import com.oumou.homeDutyTracker.domain.Tache;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

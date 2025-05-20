@@ -1,7 +1,7 @@
-package com.homeDutyTracker.service;
+package com.oumou.homeDutyTracker.service;
 
-import com.homeDutyTracker.dao.TacheDAO;
-import com.homeDutyTracker.domain.Tache;
+import com.oumou.homeDutyTracker.dao.TacheDAO;
+import com.oumou.homeDutyTracker.domain.Tache;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ public class TacheService {
         TacheDAO.addTask(tache);
         // TODO : générer notifications
     }
-    public List<Tache> getAllTask() throws Exception {
+    public static List<Tache> getAllTask() throws Exception {
 
        return  TacheDAO.getAllTask();
 

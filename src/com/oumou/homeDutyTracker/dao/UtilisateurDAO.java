@@ -1,6 +1,7 @@
-package com.homeDutyTracker.dao;
+package com.oumou.homeDutyTracker.dao;
 
-import com.homeDutyTracker.domain.Utilisateur;
+import com.oumou.homeDutyTracker.dao.database.ConnexionDB;
+import com.oumou.homeDutyTracker.domain.Utilisateur;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

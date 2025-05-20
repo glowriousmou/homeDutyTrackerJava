@@ -1,0 +1,8 @@
+2025-05-20 21:56:06 DEBUG class com.oumou.homeDutyTracker.dao.database.ConnexionDB - Message DEBUG
+2025-05-20 21:56:06 INFO  class com.oumou.homeDutyTracker.dao.database.ConnexionDB - Message INFO
+2025-05-20 21:56:06 WARN  class com.oumou.homeDutyTracker.dao.database.ConnexionDB - Message WARN
+2025-05-20 21:56:06 ERROR class com.oumou.homeDutyTracker.dao.database.ConnexionDB - Message ERROR
+2025-05-20 21:56:06 FATAL class com.oumou.homeDutyTracker.dao.database.ConnexionDB - Message FATAL
+2025-05-20 22:04:40 INFO  class com.oumou.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
+2025-05-20 22:11:15 INFO  com.oumou.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
+2025-05-20 22:11:15 INFO  Main - Tâche créée avec succès !

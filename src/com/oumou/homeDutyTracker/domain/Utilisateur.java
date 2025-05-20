@@ -1,4 +1,4 @@
-package com.homeDutyTracker.domain;
+package com.oumou.homeDutyTracker.domain;
 
 import java.util.ArrayList;
 import java.util.List;
