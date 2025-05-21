@@ -31,4 +31,4 @@ bin/
 
 #config/db.properties
 config/
-idea/
+.idea/
