@@ -28,6 +28,19 @@ public class Tache {
         this.dateLimite = dateLimite;
     }
     public Tache(
+             String nom, String description, Enfant responsable, Enfant superviseur,
+            Parent createur, String statut,LocalDateTime dateCreation, LocalDateTime dateLimite
+    ) {
+        this.nom = nom;
+        this.description = description;
+        this.responsable = responsable;
+        this.superviseur = superviseur;
+        this.createur = createur;
+        this.statut = statut;
+        this.dateCreation = dateCreation;
+        this.dateLimite = dateLimite;
+    }
+    public Tache(
             int id, String nom, String description, Parent createur, String statut,LocalDateTime dateCreation, LocalDateTime dateLimite
     ) {
         this.id = id;

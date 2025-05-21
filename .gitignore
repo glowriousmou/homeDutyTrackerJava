@@ -29,4 +29,6 @@ bin/
 .DS_Store
 
 
-config/db.properties
+#config/db.properties
+config/
+idea/

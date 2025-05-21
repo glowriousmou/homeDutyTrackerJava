@@ -130,7 +130,11 @@ public class ConnexionDB {
                     date_limite DATETIME,
                     statut VARCHAR(20),
                     createur_id INT,
-                    FOREIGN KEY (createur_id) REFERENCES utilisateur(id)
+                    superviseur_id INT,
+                    responsable_id INT,
+                    FOREIGN KEY (createur_id) REFERENCES utilisateur(id),
+                    FOREIGN KEY (superviseur_id) REFERENCES utilisateur(id),
+                    FOREIGN KEY (responsable_id) REFERENCES utilisateur(id)
                 );
             """);
 

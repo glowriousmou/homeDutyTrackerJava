@@ -21,7 +21,7 @@ public class TacheTableUI {
         titleLabel.setBorder(BorderFactory.createEmptyBorder(10, 0, 10, 0));
 
         // Colonnes du tableau
-        String[] columnNames = {"Nom", "Description", "Date de création", "Date limite", "Statut", "Créateur"};
+        String[] columnNames = {"Nom", "Description", "Date de création", "Date limite", "Statut", "Créateur","superviseur", "responsable"};
 
         // Récupérer les données depuis la base
         // TacheService tacheService = new TacheService();
@@ -37,6 +37,8 @@ public class TacheTableUI {
             data[i][3] = t.getDateLimite();
             data[i][4] = t.getStatut();
             data[i][5] = t.getCreateur().getPrenom() + " " + t.getCreateur().getNom(); // Affichage du créateur
+            data[i][6] = t.getSuperviseur().getPrenom() + " " + t.getSuperviseur().getNom(); // Affichage du superviseur
+            data[i][7] = t.getResponsable().getPrenom() + " " + t.getResponsable().getNom(); // Affichage du responsable
         }
 
         // Création de la table avec les données

@@ -18,17 +18,17 @@
     </orderEntry>
     <orderEntry type="module-library">
       <library>
-        <CLASSES />
-        <JAVADOC>
-          <root url="jar://$USER_HOME$/Downloads/log4j-1.2.17-javadoc.jar!/" />
-        </JAVADOC>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/log4j-1.2.17.jar!/" />
+        </CLASSES>
+        <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/log4j-1.2.17.jar!/" />
+          <root url="jar://$USER_HOME$/Downloads/jBCrypt-0.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
