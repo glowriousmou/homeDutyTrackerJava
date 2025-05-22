@@ -30,41 +30,7 @@ public class ConnexionDB {
             e.printStackTrace();
         }
     }
-    public static void initializeDBd() {
 
-        try  {
-            FileInputStream input = new FileInputStream("config/db.propertiesf");
-            if (input == null) {
-                System.out.println("Fichier db.properties non trouvé !");
-                return;
-            }
-            Properties props = new Properties();
-            props.load(input);
-
-            DB_NAME = props.getProperty("db.name");
-            URL_BASE = props.getProperty("db.url");
-            USER = props.getProperty("db.user");
-            PASSWORD = props.getProperty("db.password");
-
-            Connection connectionDB = DriverManager.getConnection(URL_BASE, USER, PASSWORD);
-            System.out.println("Connexion réussie !");
-
-            // 1. Créer la base si elle n'existe pas
-            Statement stmt = connectionDB.createStatement();
-            stmt.executeUpdate("CREATE DATABASE IF NOT EXISTS " + DB_NAME);
-
-            connectionDB.close();
-
-            // 2. Créer les tables
-            initializeTables();
-        } catch (IOException e) {
-            System.out.println("Erreur de lecture du fichier de config");
-            e.printStackTrace();
-        } catch (Exception e) {
-            System.out.println("Erreur de connexion à la base");
-            e.printStackTrace();
-        }
-    }
     public static void initializeDB() {
         Properties props = new Properties();
 
@@ -138,7 +104,16 @@ public class ConnexionDB {
                 );
             """);
 
-            // Tu peux continuer ici avec les tables : assignation, notification, etc.
+            stmt.executeUpdate("""
+                CREATE TABLE IF NOT EXISTS notification (
+                    id INT PRIMARY KEY AUTO_INCREMENT,
+                    message VARCHAR(500),
+                    date_creation DATETIME,
+                    tache_id INT,
+                    FOREIGN KEY (tache_id) REFERENCES tache(id)
+                );
+            """);
+
 
         } catch (Exception e) {
             e.printStackTrace();

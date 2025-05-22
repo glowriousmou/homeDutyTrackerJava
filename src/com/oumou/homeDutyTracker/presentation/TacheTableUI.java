@@ -1,7 +1,7 @@
 package com.oumou.homeDutyTracker.presentation;
 
 import com.oumou.homeDutyTracker.domain.Tache;
-import com.oumou.homeDutyTracker.service.TacheService;
+import com.oumou.homeDutyTracker.service.TacheServiceImpl;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -24,8 +24,8 @@ public class TacheTableUI {
         String[] columnNames = {"Nom", "Description", "Date de création", "Date limite", "Statut", "Créateur","superviseur", "responsable"};
 
         // Récupérer les données depuis la base
-        // TacheService tacheService = new TacheService();
-        List<Tache> taches = TacheService.getAllTask();
+        TacheServiceImpl tacheService = new TacheServiceImpl();
+        List<Tache> taches = tacheService.afficherListTache();
 
         // Convertir les données en tableau d’objets pour JTable
         Object[][] data = new Object[taches.size()][columnNames.length];

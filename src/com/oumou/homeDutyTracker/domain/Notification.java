@@ -1,23 +1,30 @@
 package com.oumou.homeDutyTracker.domain;
 
+import java.time.LocalDateTime;
+
 public class Notification {
-    private String identifiant;
+    private int identifiant;
     private String message;
-    private String dateCreation;
+    private LocalDateTime dateCreation;
     private Tache tache;
 
-    public Notification(String identifiant, String message, String dateCreation, Tache assignationTache) {
+    public Notification(int identifiant, String message, LocalDateTime dateCreation, Tache tache) {
         this.identifiant = identifiant;
         this.message = message;
         this.dateCreation = dateCreation;
         this.tache = tache;
     }
+    public Notification(String message, LocalDateTime dateCreation, Tache tache) {
+        this.message = message;
+        this.dateCreation = dateCreation;
+        this.tache = tache;
+    }
 
-    public String getIdentifiant() {
+    public int getIdentifiant() {
         return identifiant;
     }
 
-    public void setIdentifiant(String identifiant) {
+    public void setIdentifiant(int identifiant) {
         this.identifiant = identifiant;
     }
 
@@ -29,11 +36,11 @@ public class Notification {
         this.message = message;
     }
 
-    public String getDateCreation() {
+    public LocalDateTime getDateCreation() {
         return dateCreation;
     }
 
-    public void setDateCreation(String dateCreation) {
+    public void setDateCreation(LocalDateTime dateCreation) {
         this.dateCreation = dateCreation;
     }
 

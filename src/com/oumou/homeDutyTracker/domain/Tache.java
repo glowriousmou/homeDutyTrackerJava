@@ -1,5 +1,7 @@
 package com.oumou.homeDutyTracker.domain;
 
+import com.oumou.homeDutyTracker.domain.enumeration.StatutTache;
+
 import java.time.LocalDateTime;
 
 public class Tache {
@@ -9,13 +11,13 @@ public class Tache {
     private Enfant responsable;
     private Enfant superviseur;
     private Parent createur;
-    private String statut;
+    private StatutTache statut;
     private LocalDateTime dateCreation;
     private LocalDateTime dateLimite;
 
     public Tache(
             int id, String nom, String description, Enfant responsable, Enfant superviseur,
-            Parent createur, String statut,LocalDateTime dateCreation, LocalDateTime dateLimite
+            Parent createur, StatutTache statut,LocalDateTime dateCreation, LocalDateTime dateLimite
     ) {
         this.id = id;
         this.nom = nom;
@@ -28,8 +30,15 @@ public class Tache {
         this.dateLimite = dateLimite;
     }
     public Tache(
+            int id, String nom, Enfant responsable
+    ) {
+        this.id = id;
+        this.nom = nom;
+        this.responsable = responsable;
+    }
+    public Tache(
              String nom, String description, Enfant responsable, Enfant superviseur,
-            Parent createur, String statut,LocalDateTime dateCreation, LocalDateTime dateLimite
+            Parent createur, StatutTache statut,LocalDateTime dateCreation, LocalDateTime dateLimite
     ) {
         this.nom = nom;
         this.description = description;
@@ -41,7 +50,7 @@ public class Tache {
         this.dateLimite = dateLimite;
     }
     public Tache(
-            int id, String nom, String description, Parent createur, String statut,LocalDateTime dateCreation, LocalDateTime dateLimite
+            int id, String nom, String description, Parent createur, StatutTache statut,LocalDateTime dateCreation, LocalDateTime dateLimite
     ) {
         this.id = id;
         this.nom = nom;
@@ -53,7 +62,7 @@ public class Tache {
     }
     public Tache(
              String nom, String description,
-            Parent createur, String statut,LocalDateTime dateCreation, LocalDateTime dateLimite
+            Parent createur, StatutTache statut,LocalDateTime dateCreation, LocalDateTime dateLimite
     ) {
 
         this.nom = nom;
@@ -114,11 +123,11 @@ public class Tache {
         this.createur = createur;
     }
 
-    public String getStatut() {
+    public StatutTache getStatut() {
         return statut;
     }
 
-    public void setStatut(String statut) {
+    public void setStatut(StatutTache statut) {
         this.statut = statut;
     }
 

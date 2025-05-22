@@ -15,3 +15,23 @@
 2025-05-21 09:40:55 INFO  Main - Tâche créée avec succès !
 2025-05-21 09:51:30 INFO  com.oumou.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
 2025-05-21 09:51:30 INFO  Main - Tâche créée avec succès !
+2025-05-22 18:50:16 INFO  com.oumou.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
+2025-05-22 18:50:17 INFO  Main - Tâche créée avec succès !
+2025-05-22 18:54:48 INFO  com.oumou.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
+2025-05-22 18:54:48 INFO  Main - Tâche créée avec succès !
+2025-05-22 22:45:11 INFO  com.oumou.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
+2025-05-22 22:47:47 INFO  com.oumou.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
+2025-05-22 22:47:47 INFO  Main - Tâche créée avec succès !
+2025-05-22 22:47:47 INFO  Main - Notification de l'enfant Blaise Cissé []
+2025-05-22 22:50:50 INFO  com.oumou.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
+2025-05-22 22:50:51 INFO  Main - Tâche créée avec succès !
+2025-05-22 22:50:51 INFO  Main - Notification de l'enfant Blaise Cissé []
+2025-05-22 22:53:49 INFO  com.oumou.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
+2025-05-22 22:53:49 INFO  Main - Tâche créée avec succès !
+2025-05-22 22:53:49 INFO  Main - Notification de l'enfant Blaise Cissé []
+2025-05-22 22:55:20 INFO  com.oumou.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
+2025-05-22 22:55:21 INFO  Main - Tâche créée avec succès !
+2025-05-22 22:55:21 INFO  Main - Notification de l'enfant Blaise Cissé [Notification{identifiant='1', message='le parent Jean Cissé a marqué la tache Menage comme INITIALIZED', dateCreation='2025-05-22T22:55:21'}]
+2025-05-22 22:55:25 INFO  com.oumou.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
+2025-05-22 22:55:25 INFO  Main - Tâche créée avec succès !
+2025-05-22 22:55:25 INFO  Main - Notification de l'enfant Blaise Cissé [Notification{identifiant='3', message='le parent Jean Cissé a marqué la tache Menage comme INITIALIZED', dateCreation='2025-05-22T22:55:26'}]
