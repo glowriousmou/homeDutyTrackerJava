@@ -31,7 +31,7 @@ public class ConnexionDB {
         }
     }
 
-    public static void initializeDB() {
+    public static void initializeDBOLd() {
         Properties props = new Properties();
 
         try (FileInputStream input = new FileInputStream("config/db.properties")) {
@@ -65,12 +65,49 @@ public class ConnexionDB {
         } catch (Exception e) {
             //System.out.println("Erreur inconnue lors de l'initialisation.");
             logger.error("Erreur inconnue lors de l'initialisation.");
-            e.printStackTrace();
+            // e.printStackTrace();
+        }
+    }
+    public static void initializeDB() {
+        Properties props = new Properties();
+
+        try (FileInputStream input = new FileInputStream("config/db.properties")) {
+            props.load(input);
+
+            DB_NAME = props.getProperty("db.name");
+            URL_BASE = props.getProperty("db.url");
+            USER = props.getProperty("db.user");
+            PASSWORD = props.getProperty("db.password");
+
+            try (Connection connectionDB = DriverManager.getConnection(URL_BASE, USER, PASSWORD)) {
+                logger.info("Connexion réussie !");
+                Statement stmt = connectionDB.createStatement();
+                stmt.executeUpdate("CREATE DATABASE IF NOT EXISTS " + DB_NAME);
+            }
+
+            initializeTables();
+
+        } catch (FileNotFoundException e) {
+            logger.warn("Fichier de configuration introuvable. Utilisation des valeurs par défaut.");
+            // Optionnel : charger des valeurs par défaut
+        } catch (IOException e) {
+            logger.warn("Erreur de lecture du fichier de configuration.");
+        } catch (SQLException e) {
+            logger.warn("Erreur SQL : impossible de créer ou de se connecter à la base.");
+        } catch (Exception e) {
+            logger.warn("Erreur inconnue lors de l'initialisation.");
         }
     }
 
+
     public static Connection getConnection() throws Exception {
+        try {
         return DriverManager.getConnection(URL_BASE + DB_NAME, USER, PASSWORD);
+        } catch (SQLException e) {
+            // Ne surtout pas faire e.printStackTrace()
+            logger.error("Erreur de connexion à la base de données : " + e.getMessage());
+            return null; // ou lever une exception métier
+        }
     }
 
     public static void initializeTables() {
@@ -116,7 +153,8 @@ public class ConnexionDB {
 
 
         } catch (Exception e) {
-            e.printStackTrace();
+            // e.printStackTrace();
+            logger.error("Erreur lors de l'initialisation des table : " + e.getMessage());
         }
     }
 }

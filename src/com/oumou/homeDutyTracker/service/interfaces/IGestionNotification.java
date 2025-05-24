@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface IGestionNotification {
     int creerNotification(Notification notification) throws Exception;
-    List<Notification> afficherHistoriqueNotification(Utilisateur utilisateur);
+    List<Notification> afficherHistoriqueNotification(Utilisateur utilisateur)throws Exception;
 }

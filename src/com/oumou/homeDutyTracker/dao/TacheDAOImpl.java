@@ -1,19 +1,22 @@
 package com.oumou.homeDutyTracker.dao;
 
 import com.oumou.homeDutyTracker.dao.database.ConnexionDB;
+import com.oumou.homeDutyTracker.dao.interfaces.ITacheDAO;
 import com.oumou.homeDutyTracker.domain.Enfant;
 import com.oumou.homeDutyTracker.domain.Parent;
 import com.oumou.homeDutyTracker.domain.Tache;
 import com.oumou.homeDutyTracker.domain.Utilisateur;
 import com.oumou.homeDutyTracker.domain.enumeration.StatutTache;
 import com.oumou.homeDutyTracker.service.TacheServiceImpl;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TacheDAO {
-    public static int addTask(Tache t) throws Exception {
+public class TacheDAOImpl implements ITacheDAO {
+    private static final Logger logger = Logger.getLogger(TacheDAOImpl.class);
+    public int create(Tache t) throws SQLException {
         String sql = "INSERT INTO tache (nom, description, date_creation, date_limite, statut, createur_id,superviseur_id, responsable_id) VALUES (?, ?, ?, ?, ?, ?,?,?)";
         try (Connection con = ConnexionDB.getConnection();
              PreparedStatement stmt = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
@@ -28,11 +31,15 @@ public class TacheDAO {
             stmt.executeUpdate();
             ResultSet rs = stmt.getGeneratedKeys();
             if (rs.next()) return rs.getInt(1);
+        }  catch (SQLException e) {
+            logger.error("Erreur SQL : impossible de créer une tache "+ e);
+        } catch (Exception e) {
+            logger.error("Erreur inconnue lors de la création d'une tache. "+ e);
         }
         return -1;
     }
 
-    public static List<Tache> getAllTask() {
+    public  List<Tache> getAll() {
         List<Tache> listTaches = new ArrayList<>();
         String sql = """
         SELECT 
@@ -113,18 +120,16 @@ public class TacheDAO {
                 listTaches.add(tache);
             }
 
-        } catch (SQLException e) {
-            System.err.println("Erreur SQL lors de la récupération des tâches : " + e.getMessage());
-            e.printStackTrace(); // ou log dans un fichier avec log4j/slf4j
+        }  catch (SQLException e) {
+            logger.error("Erreur SQL : impossible de récupérer la liste des taches "+ e);
         } catch (Exception e) {
-            System.err.println("Erreur inattendue : " + e.getMessage());
-            e.printStackTrace();
+            logger.error("Erreur inconnue lors de la récupération de la liste des taches. "+ e);
         }
 
         return listTaches;
     }
 
-    public static List<Tache> getAllTask(Utilisateur utilisateur) {
+    public  List<Tache> getAll(Utilisateur utilisateur) {
         List<Tache> listTaches = new ArrayList<>();
 
         String sql = """
@@ -218,15 +223,14 @@ public class TacheDAO {
                 }
             }
 
-        } catch (SQLException e) {
-            System.err.println("Erreur SQL lors de la récupération des tâches : " + e.getMessage());
-            e.printStackTrace(); // ou log dans un fichier avec log4j/slf4j
+        }   catch (SQLException e) {
+            logger.error("Erreur SQL : impossible de récupérer la liste des taches par utilisateurs "+ e);
         } catch (Exception e) {
-            System.err.println("Erreur inattendue : " + e.getMessage());
-            e.printStackTrace();
+            logger.error("Erreur inconnue lors de la récupération de la liste des taches par utilisateurs. "+ e);
         }
 
         return listTaches;
     }
+
 
 }

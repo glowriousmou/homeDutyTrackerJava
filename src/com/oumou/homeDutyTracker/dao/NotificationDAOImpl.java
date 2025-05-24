@@ -1,16 +1,19 @@
 package com.oumou.homeDutyTracker.dao;
 
 import com.oumou.homeDutyTracker.dao.database.ConnexionDB;
+import com.oumou.homeDutyTracker.dao.interfaces.INotificationDao;
 import com.oumou.homeDutyTracker.domain.Enfant;
 import com.oumou.homeDutyTracker.domain.Notification;
 import com.oumou.homeDutyTracker.domain.Tache;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NotificationDAO {
-    public static int addNotification(Notification notification) throws Exception {
+public class NotificationDAOImpl implements INotificationDao {
+    private static final Logger logger = Logger.getLogger(NotificationDAOImpl.class);
+    public  int create(Notification notification) throws SQLException {
         String sql = "INSERT INTO notification (message, date_creation, tache_id) VALUES (?, ?, ?)";
         try (Connection con = ConnexionDB.getConnection();
              PreparedStatement stmt = con.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS)) {
@@ -20,11 +23,15 @@ public class NotificationDAO {
             stmt.executeUpdate();
             ResultSet rs = stmt.getGeneratedKeys();
             if (rs.next()) return rs.getInt(1);
+        } catch (SQLException e) {
+            logger.error("Erreur SQL : impossible de créer une notification "+ e);
+        } catch (Exception e) {
+            logger.error("Erreur inconnue lors de la création d'une notification. "+ e);
         }
         return -1;
     }
 
-    public static List<Notification> getAllNotification() {
+    public  List<Notification> getAll() throws SQLException {
         List<Notification> listNotification = new ArrayList<>();
         String sql = """
         SELECT 
@@ -77,12 +84,10 @@ public class NotificationDAO {
                 listNotification.add(notification);
             }
 
-        } catch (SQLException e) {
-            System.err.println("Erreur SQL lors de la récupération des tâches : " + e.getMessage());
-            e.printStackTrace(); // ou log dans un fichier avec log4j/slf4j
+        }  catch (SQLException e) {
+            logger.error("Erreur SQL : impossible de récupérer la liste des notifications "+ e);
         } catch (Exception e) {
-            System.err.println("Erreur inattendue : " + e.getMessage());
-            e.printStackTrace();
+            logger.error("Erreur inconnue lors de la récupération de la liste des notifications. "+ e);
         }
 
         return listNotification;
