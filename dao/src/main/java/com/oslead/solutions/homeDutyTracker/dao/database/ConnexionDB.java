@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -36,32 +37,41 @@ public class ConnexionDB {
     public static void initializeDB() {
         Properties props = new Properties();
 
-        try (FileInputStream input = new FileInputStream("config/db.properties")) {
+        // try (FileInputStream input = new FileInputStream("config/db.properties")) {
+        try (InputStream input = ConnexionDB.class
+                .getClassLoader()
+                .getResourceAsStream("db.properties")) {
+            if (input == null) {
+                //throw new IllegalStateException("db.properties introuvable");
+                logger.error("InitializeDB db.properties introuvable");
+            }
+            //dbProps.load(is);
             props.load(input);
+
 
             DB_NAME = props.getProperty("db.name");
             URL_BASE = props.getProperty("db.url");
             USER = props.getProperty("db.user");
             PASSWORD = props.getProperty("db.password");
-logger.info("database info "+ URL_BASE+" "+USER);
+            // logger.info("database info "+ URL_BASE+" "+USER);
             try (Connection connectionDB = DriverManager.getConnection(URL_BASE, USER, PASSWORD)) {
                 logger.info("Connexion réussie !");
                 Statement stmt = connectionDB.createStatement();
                 stmt.executeUpdate("CREATE DATABASE IF NOT EXISTS " + DB_NAME);
-            }
 
             initializeTables();
 
-        } catch (FileNotFoundException e) {
-            logger.warn("Fichier de configuration introuvable. Utilisation des valeurs par défaut.");
-            // Optionnel : charger des valeurs par défaut
-        } catch (IOException e) {
-            logger.warn("Erreur de lecture du fichier de configuration.");
-        } catch (SQLException e) {
-            logger.warn("Erreur SQL : impossible de créer ou de se connecter à la base.");
-        } catch (Exception e) {
-            logger.warn("Erreur inconnue lors de l'initialisation.");
+            } catch (SQLException e) {
+                logger.error("Erreur SQL : impossible de créer ou de se connecter à la base.");
+            } catch (Exception e) {
+                logger.error("Erreur inconnue lors de l'initialisation.");
+            }
+        } catch (IOException ex) {
+            //throw new RuntimeException(ex);
+            logger.error("Erreur inconnue InitializeDB.");
         }
+
+
     }
 
 

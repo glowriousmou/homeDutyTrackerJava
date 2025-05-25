@@ -24,7 +24,17 @@ public class App {
     public static void main(String[] args) {
 
         try {
-            PropertyConfigurator.configure("./config/log4j.properties");
+
+            try {
+                //PropertyConfigurator.configure("log4j.properties");
+                PropertyConfigurator.configure(
+                        App.class.getClassLoader().getResource("log4j.properties")
+                );
+            } catch (Exception e) {
+                System.err.println("Erreur lors du chargement de Log4j : " + e);
+                //e.printStackTrace();
+            }
+           // PropertyConfigurator.configure("log4j.properties");
             String password= UtilisateurServiceImpl.hashPassword("1234567");
             Parent parent1= new Parent("Jean", "Cissé", "jean@cisse.com", password);
             Enfant enfant1= new Parent("Blaise", "Cissé", "blaise@cisse.com", password);

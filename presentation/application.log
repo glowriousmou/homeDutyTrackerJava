@@ -1,0 +1,4 @@
+2025-05-25 21:08:56 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
+2025-05-25 21:08:56 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
+2025-05-25 21:08:57 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
+2025-05-25 21:08:57 INFO  com.oslead.solutions.homeDutyTracker.presentation.App - Notification de l'enfant Blaise Cissé [Notification{identifiant='15', message='le parent Jean Cissé a marqué la tache Menage comme INITIALIZED', dateCreation='2025-05-25T21:08:57'}]
