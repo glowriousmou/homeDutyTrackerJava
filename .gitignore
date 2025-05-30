@@ -33,5 +33,5 @@ bin/
 #config/
 .idea/
 *.properties
-.mvn/
+#.mvn/
 target/
