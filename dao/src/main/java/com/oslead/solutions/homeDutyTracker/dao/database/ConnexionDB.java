@@ -2,8 +2,6 @@ package com.oslead.solutions.homeDutyTracker.dao.database;
 
 import org.apache.log4j.Logger;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -40,7 +38,7 @@ public class ConnexionDB {
         // try (FileInputStream input = new FileInputStream("config/db.properties")) {
         try (InputStream input = ConnexionDB.class
                 .getClassLoader()
-                .getResourceAsStream("db.properties")) {
+                .getResourceAsStream("db/db.properties")) {
             if (input == null) {
                 //throw new IllegalStateException("db.properties introuvable");
                 logger.error("InitializeDB db.properties introuvable");

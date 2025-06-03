@@ -2,14 +2,14 @@ package com.oslead.solutions.homeDutyTracker.dao;
 
 ;
 import com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB;
-import com.oslead.solutions.homeDutyTracker.dao.interfaces.IUtilisateurDAO;
+import com.oslead.solutions.homeDutyTracker.dao.interfaces.IUtilisateurDAOV1;
 import com.oslead.solutions.homeDutyTracker.domain.Utilisateur;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
 
-public class UtilisateurDAOImpl implements IUtilisateurDAO {
-    private static final Logger logger = Logger.getLogger(UtilisateurDAOImpl.class);
+public class UtilisateurDAOImplV1 implements IUtilisateurDAOV1 {
+    private static final Logger logger = Logger.getLogger(UtilisateurDAOImplV1.class);
     public  int create(Utilisateur u, String role) throws SQLException {
         String sql = "INSERT INTO utilisateur (role, nom, prenom, email, mot_de_passe) VALUES (?, ?, ?, ?, ?)";
         try (Connection con = ConnexionDB.getConnection();

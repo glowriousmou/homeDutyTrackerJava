@@ -2,7 +2,7 @@ package com.oslead.solutions.homeDutyTracker.presentation;
 
 import com.oslead.solutions.homeDutyTracker.dao.NotificationDAOImpl;
 import com.oslead.solutions.homeDutyTracker.dao.TacheDAOImpl;
-import com.oslead.solutions.homeDutyTracker.dao.UtilisateurDAOImpl;
+import com.oslead.solutions.homeDutyTracker.dao.UtilisateurDAOImplV1;
 import com.oslead.solutions.homeDutyTracker.domain.Enfant;
 import com.oslead.solutions.homeDutyTracker.domain.Parent;
 import com.oslead.solutions.homeDutyTracker.domain.Tache;
@@ -59,8 +59,8 @@ public class App {
                     LocalDateTime.now(),
                     LocalDateTime.now().plusDays(2)
             );
-            UtilisateurDAOImpl utilisateurDAOImpl = new UtilisateurDAOImpl();
-            ParentServiceImpl parentService = new ParentServiceImpl(utilisateurDAOImpl);
+            UtilisateurDAOImplV1 utilisateurDAOImplV1 = new UtilisateurDAOImplV1();
+            ParentServiceImpl parentService = new ParentServiceImpl(utilisateurDAOImplV1);
             int idParent = parentService.creerUser(parent1, "parent");
             int idEnfant1 = parentService.creerUser(enfant1, "enfant");
             int idEnfant2= parentService.creerUser(enfant2, "enfant");

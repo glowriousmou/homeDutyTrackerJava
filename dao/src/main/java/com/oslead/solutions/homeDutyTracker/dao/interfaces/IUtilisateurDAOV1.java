@@ -4,6 +4,6 @@ import com.oslead.solutions.homeDutyTracker.domain.Utilisateur;
 
 import java.sql.SQLException;
 
-public interface IUtilisateurDAO {
+public interface IUtilisateurDAOV1 {
     int create(Utilisateur utilisateur, String string) throws SQLException;
 }

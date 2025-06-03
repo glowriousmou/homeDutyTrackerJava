@@ -1,15 +1,22 @@
 package com.oslead.solutions.homeDutyTracker.domain;
 
+import com.oslead.solutions.homeDutyTracker.domain.enumeration.RoleUser;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Utilisateur   {
+public class Utilisateur   {
     private int id;
     private String prenom;
     private String nom;
     private String motPasse;
     private String email;
     private List<Tache> tacheList;
+    private RoleUser roleUser;
+
+    public Utilisateur() {
+
+    }
 
     public Utilisateur(String prenom, String nom, String email, String motPasse) {
 
@@ -82,6 +89,14 @@ public abstract class Utilisateur   {
 
     public void setAssignationTacheList(List<Tache> tacheList) {
         this.tacheList = tacheList;
+    }
+
+    public RoleUser getRoleUser() {
+        return roleUser;
+    }
+
+    public void setRoleUser(RoleUser roleUser) {
+        this.roleUser = roleUser;
     }
    /*  @Override
  public boolean authentication (String email, String motPasse){
