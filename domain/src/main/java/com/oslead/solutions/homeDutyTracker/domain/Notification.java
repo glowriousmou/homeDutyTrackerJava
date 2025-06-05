@@ -7,7 +7,7 @@ public class Notification {
     private String message;
     private LocalDateTime dateCreation;
     private Tache tache;
-
+public Notification(){}
     public Notification(int identifiant, String message, LocalDateTime dateCreation, Tache tache) {
         this.identifiant = identifiant;
         this.message = message;

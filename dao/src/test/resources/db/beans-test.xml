@@ -11,7 +11,7 @@
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="${db.driver}"/>
-        <property name="url" value="${db.url}"/>
+        <property name="url" value="${db.url}/${db.name}"/>
         <property name="username" value="${db.user}"/>
         <property name="password" value="${db.password}"/>
     </bean>
@@ -37,6 +37,12 @@
     </bean>
 
     <bean id="utilisateurDao" class="com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl">
+        <constructor-arg ref="jdbcTemplate"/>
+    </bean>
+    <bean id="tacheDao" class="com.oslead.solutions.homeDutyTracker.dao.TacheDaoImpl">
+        <constructor-arg ref="jdbcTemplate"/>
+    </bean>
+    <bean id="notificationDao" class="com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl">
         <constructor-arg ref="jdbcTemplate"/>
     </bean>
 </beans>

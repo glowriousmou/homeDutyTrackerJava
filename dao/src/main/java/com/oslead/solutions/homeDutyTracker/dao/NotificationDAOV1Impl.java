@@ -1,7 +1,7 @@
 package com.oslead.solutions.homeDutyTracker.dao;
 
 import com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB;
-import com.oslead.solutions.homeDutyTracker.dao.interfaces.INotificationDao;
+import com.oslead.solutions.homeDutyTracker.dao.interfaces.INotificationDaoV1;
 import com.oslead.solutions.homeDutyTracker.domain.Enfant;
 import com.oslead.solutions.homeDutyTracker.domain.Notification;
 import com.oslead.solutions.homeDutyTracker.domain.Tache;
@@ -11,8 +11,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NotificationDAOImpl implements INotificationDao {
-    private static final Logger logger = Logger.getLogger(NotificationDAOImpl.class);
+public class NotificationDAOV1Impl implements INotificationDaoV1 {
+    private static final Logger logger = Logger.getLogger(NotificationDAOV1Impl.class);
     public  int create(Notification notification) throws SQLException {
         String sql = "INSERT INTO notification (message, date_creation, tache_id) VALUES (?, ?, ?)";
         try (Connection con = ConnexionDB.getConnection();

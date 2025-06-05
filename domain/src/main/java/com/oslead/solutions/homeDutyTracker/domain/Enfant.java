@@ -1,6 +1,9 @@
 package com.oslead.solutions.homeDutyTracker.domain;
 
 public class Enfant extends Utilisateur {
+    public Enfant(){
+        super();
+    }
     public Enfant( String prenom, String nom,  String email, String motPasse) {
         super( prenom, nom, email, motPasse);
     }

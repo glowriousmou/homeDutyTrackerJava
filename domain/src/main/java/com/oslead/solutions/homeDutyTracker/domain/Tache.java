@@ -14,7 +14,7 @@ public class Tache {
     private StatutTache statut;
     private LocalDateTime dateCreation;
     private LocalDateTime dateLimite;
-
+    public Tache(){}
     public Tache(
             int id, String nom, String description, Enfant responsable, Enfant superviseur,
             Parent createur, StatutTache statut,LocalDateTime dateCreation, LocalDateTime dateLimite

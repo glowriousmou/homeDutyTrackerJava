@@ -1,6 +1,5 @@
 package com.oslead.solutions.homeDutyTracker.dao;
 
-;
 import com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB;
 import com.oslead.solutions.homeDutyTracker.dao.interfaces.IUtilisateurDAOV1;
 import com.oslead.solutions.homeDutyTracker.domain.Utilisateur;

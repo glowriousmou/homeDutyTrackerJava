@@ -5,7 +5,7 @@ import com.oslead.solutions.homeDutyTracker.domain.Utilisateur;
 import java.sql.SQLException;
 import java.util.List;
 
-public interface ITacheDAO  {
+public interface ITacheDAOV1 {
     int create(Tache tache) throws SQLException;
 
     // boolean update(Tache tache) throws SQLException;

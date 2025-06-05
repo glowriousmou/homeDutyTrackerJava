@@ -1,7 +1,7 @@
 package com.oslead.solutions.homeDutyTracker.presentation;
 
-import com.oslead.solutions.homeDutyTracker.dao.NotificationDAOImpl;
-import com.oslead.solutions.homeDutyTracker.dao.TacheDAOImpl;
+import com.oslead.solutions.homeDutyTracker.dao.NotificationDAOV1Impl;
+import com.oslead.solutions.homeDutyTracker.dao.TacheDAOV1ImplV1;
 import com.oslead.solutions.homeDutyTracker.dao.UtilisateurDAOImplV1;
 import com.oslead.solutions.homeDutyTracker.domain.Enfant;
 import com.oslead.solutions.homeDutyTracker.domain.Parent;
@@ -68,14 +68,14 @@ public class App {
             enfant1.setId(idEnfant1);
             enfant2.setId(idEnfant2);
             if(idParent > 0 && idEnfant1 > 0 && idEnfant2>0) {
-                TacheDAOImpl tacheDAOImpl = new TacheDAOImpl();
-                TacheServiceImpl tacheService = new TacheServiceImpl(tacheDAOImpl);
+                TacheDAOV1ImplV1 tacheDAOImplV1 = new TacheDAOV1ImplV1();
+                TacheServiceImpl tacheService = new TacheServiceImpl(tacheDAOImplV1);
                 boolean isTacheCreated1 = tacheService.creerTache(tache1);
                 boolean isTacheCreated2 = tacheService.creerTache(tache2);
 
                 // System.out.println("Tâche créée avec succès !");
                 // logger.info("Tâche créée avec succès ! " + idParent);
-                NotificationDAOImpl notificationDAOImpl= new NotificationDAOImpl();
+                NotificationDAOV1Impl notificationDAOImpl= new NotificationDAOV1Impl();
                 NotificationServiceImpl notificationService = new NotificationServiceImpl(notificationDAOImpl);
                 if (isTacheCreated1) {
                     logger.info("Notification de l'enfant " + enfant1.getPrenom() + " " + enfant1.getNom() + " " + notificationService.afficherHistoriqueNotification(enfant1));

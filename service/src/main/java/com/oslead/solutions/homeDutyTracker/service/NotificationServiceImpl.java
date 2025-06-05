@@ -1,6 +1,6 @@
 package com.oslead.solutions.homeDutyTracker.service;
 
-import com.oslead.solutions.homeDutyTracker.dao.NotificationDAOImpl;
+import com.oslead.solutions.homeDutyTracker.dao.NotificationDAOV1Impl;
 import com.oslead.solutions.homeDutyTracker.domain.Notification;
 import com.oslead.solutions.homeDutyTracker.domain.Utilisateur;
 import com.oslead.solutions.homeDutyTracker.service.interfaces.IGestionNotification;
@@ -11,9 +11,9 @@ import java.util.List;
 public class NotificationServiceImpl implements IGestionNotification
 {
     private static final Logger logger = Logger.getLogger(NotificationServiceImpl.class);
-    private final NotificationDAOImpl notificationDAOImpl;
+    private final NotificationDAOV1Impl notificationDAOImpl;
 
-    public NotificationServiceImpl(NotificationDAOImpl notificationDAOImpl) {
+    public NotificationServiceImpl(NotificationDAOV1Impl notificationDAOImpl) {
         this.notificationDAOImpl = notificationDAOImpl;
     }
 

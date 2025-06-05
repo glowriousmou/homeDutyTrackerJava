@@ -1,7 +1,7 @@
 package com.oslead.solutions.homeDutyTracker.service;
 
-import com.oslead.solutions.homeDutyTracker.dao.NotificationDAOImpl;
-import com.oslead.solutions.homeDutyTracker.dao.TacheDAOImpl;
+import com.oslead.solutions.homeDutyTracker.dao.NotificationDAOV1Impl;
+import com.oslead.solutions.homeDutyTracker.dao.TacheDAOV1ImplV1;
 import com.oslead.solutions.homeDutyTracker.domain.Notification;
 import com.oslead.solutions.homeDutyTracker.domain.Tache;
 import com.oslead.solutions.homeDutyTracker.domain.Utilisateur;
@@ -15,16 +15,16 @@ import java.util.List;
 public class TacheServiceImpl implements IGestionTache {
     private static final Logger logger = Logger.getLogger(TacheServiceImpl.class);
     // private TacheDAOImpl tacheDAOImpl = new TacheDAOImpl();
-    private final TacheDAOImpl tacheDAOImpl;
+    private final TacheDAOV1ImplV1 tacheDAOImplV1;
 
 
-    public TacheServiceImpl(TacheDAOImpl tacheDAOImpl) {
-        this.tacheDAOImpl = tacheDAOImpl;
+    public TacheServiceImpl(TacheDAOV1ImplV1 tacheDAOImplV1) {
+        this.tacheDAOImplV1 = tacheDAOImplV1;
     }
 
     public boolean creerTache(Tache tache) throws Exception {
         tache.setStatut(StatutTache.INITIALIZED);
-        int tacheId = tacheDAOImpl.create(tache);
+        int tacheId = tacheDAOImplV1.create(tache);
         tache.setId(tacheId);
 
         if(tacheId>0) {
@@ -34,7 +34,7 @@ public class TacheServiceImpl implements IGestionTache {
                     LocalDateTime.now(),
                     tache
             );
-            NotificationDAOImpl notificationDAOImpl= new NotificationDAOImpl();
+            NotificationDAOV1Impl notificationDAOImpl= new NotificationDAOV1Impl();
             NotificationServiceImpl notificationService = new NotificationServiceImpl(notificationDAOImpl);
             notificationService.creerNotification(notification);
             logger.info("Tâche créée avec succès !");
@@ -52,11 +52,11 @@ public class TacheServiceImpl implements IGestionTache {
     };
 
     public List<Tache> afficherListTache() throws Exception {
-       return  tacheDAOImpl.getAll();
+       return  tacheDAOImplV1.getAll();
     }
     @Override
     public  List<Tache> afficherListTache(Utilisateur utilisateur) throws Exception {
-        return  tacheDAOImpl.getAll(utilisateur);
+        return  tacheDAOImplV1.getAll(utilisateur);
     }
 
     public static StatutTache fromStringToEnum(String value, StatutTache defaultValue) {

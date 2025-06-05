@@ -1,4 +1,4 @@
-CREATE DATABASE homeDutyTracker_dbV2;
+CREATE DATABASE IF NOT EXISTS homeDutyTracker_dbV2;
 
 USE homeDutyTracker_dbV2;
 

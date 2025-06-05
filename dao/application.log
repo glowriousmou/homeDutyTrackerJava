@@ -1,0 +1,41 @@
+2025-06-05 11:40:07 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 11:40:09 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 11:40:09 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de créer un utilisateur org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException; SQL state [3D000]; error code [1046]; No database selected
+2025-06-05 11:40:09 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de lister  utilisateur org.springframework.jdbc.UncategorizedSQLException: StatementCallback; uncategorized SQLException for SQL [SELECT * FROM utilisateur]; SQL state [3D000]; error code [1046]; No database selected
+2025-06-05 11:40:09 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de lister  utilisateur org.springframework.jdbc.UncategorizedSQLException: StatementCallback; uncategorized SQLException for SQL [SELECT * FROM utilisateur]; SQL state [3D000]; error code [1046]; No database selected
+2025-06-05 11:44:18 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 11:44:19 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 11:45:31 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 11:45:32 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 11:52:59 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 11:53:00 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 12:27:15 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 12:27:16 ERROR com.oslead.solutions.homeDutyTracker.dao.TacheDaoImpl - Erreur SQL : impossible de créer une tache org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; Cannot add or update a child row: a foreign key constraint fails (`homedutytracker_dbtest`.`tache`, CONSTRAINT `tache_ibfk_1` FOREIGN KEY (`createur_id`) REFERENCES `utilisateur` (`id`))
+2025-06-05 12:27:17 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 12:27:17 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 12:27:17 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 12:27:18 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 12:27:18 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 12:46:43 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 12:46:45 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 12:46:45 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 12:46:45 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 12:46:45 ERROR com.oslead.solutions.homeDutyTracker.dao.TacheDaoImpl - Erreur SQL : impossible de créer une tache org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; Cannot add or update a child row: a foreign key constraint fails (`homedutytracker_dbtest`.`tache`, CONSTRAINT `tache_ibfk_1` FOREIGN KEY (`createur_id`) REFERENCES `utilisateur` (`id`))
+2025-06-05 12:46:46 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 12:46:46 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 12:50:13 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 12:50:17 ERROR com.oslead.solutions.homeDutyTracker.dao.TacheDaoImpl - Erreur inconnue du mapping d'une tache. java.sql.SQLException: Column 'id' not found.
+2025-06-05 12:50:17 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 12:57:29 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 12:57:32 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 13:33:26 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 13:33:29 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 14:07:31 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 14:07:33 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors de la création d'une notification. java.lang.NullPointerException: Cannot invoke "java.time.LocalDateTime.getYear()" because "dateTime" is null
+2025-06-05 14:07:33 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 14:07:34 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 14:09:43 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 14:09:45 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 14:09:45 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 14:09:45 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 14:09:46 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest

@@ -2,7 +2,7 @@ package com.oslead.solutions.homeDutyTracker.dao;
 
 
 import com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB;
-import com.oslead.solutions.homeDutyTracker.dao.interfaces.ITacheDAO;
+import com.oslead.solutions.homeDutyTracker.dao.interfaces.ITacheDAOV1;
 import com.oslead.solutions.homeDutyTracker.domain.Enfant;
 import com.oslead.solutions.homeDutyTracker.domain.Parent;
 import com.oslead.solutions.homeDutyTracker.domain.Tache;
@@ -14,8 +14,8 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TacheDAOImpl implements ITacheDAO {
-    private static final Logger logger = Logger.getLogger(TacheDAOImpl.class);
+public class TacheDAOV1ImplV1 implements ITacheDAOV1 {
+    private static final Logger logger = Logger.getLogger(TacheDAOV1ImplV1.class);
     public int create(Tache t) throws SQLException {
         String sql = "INSERT INTO tache (nom, description, date_creation, date_limite, statut, createur_id,superviseur_id, responsable_id) VALUES (?, ?, ?, ?, ?, ?,?,?)";
         try (Connection con = ConnexionDB.getConnection();
