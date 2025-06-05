@@ -39,3 +39,276 @@
 2025-06-05 14:09:45 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
 2025-06-05 14:09:45 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
 2025-06-05 14:09:46 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 14:51:47 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 14:51:49 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 14:51:49 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 14:51:49 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 14:51:51 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:21:57 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:21:59 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 15:21:59 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 15:22:00 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:22:01 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:38:24 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:38:26 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 15:38:26 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 15:38:26 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:38:27 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:41:23 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:41:26 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 15:41:26 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 15:41:26 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:41:27 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:43:27 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:43:28 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:43:28 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:43:28 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:43:29 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 15:43:29 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 15:43:29 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:43:29 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:43:29 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:43:30 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:43:30 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTest
+2025-06-05 15:43:30 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 15:48:38 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 15:48:40 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:48:40 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de créer un utilisateur org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar []
+2025-06-05 15:48:40 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:48:40 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de créer un utilisateur org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar []
+2025-06-05 15:48:40 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:48:40 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de créer un utilisateur org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar []
+2025-06-05 15:48:40 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de lister  utilisateur org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM utilisateur]
+2025-06-05 15:48:40 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur SQL : impossible de lister  notification org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [ SELECT 
+            n.id AS n_id,
+            n.message AS n_message,
+            n.date_creation AS n_dateCreation,
+
+             -- Infos de la tache
+              t.id AS tache_id,
+              t.nom AS tache_nom,
+               
+               
+  -- Infos du responsable
+              r.id AS responsable_id,
+              r.nom AS responsable_nom,
+              r.prenom AS responsable_prenom,
+              r.mot_de_passe AS responsable_mot_de_passe,
+              r.email AS responsable_email
+
+          FROM notification n
+
+          LEFT JOIN tache t ON n.tache_id = t.id
+          LEFT JOIN utilisateur r ON t.responsable_id = r.id;]
+2025-06-05 15:48:40 ERROR com.oslead.solutions.homeDutyTracker.dao.TacheDaoImpl - Erreur SQL : impossible de lister  utilisateur org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT 
+            t.id AS t_id,
+            t.nom AS t_nom,
+            t.description AS t_description,
+            t.date_creation AS t_date_creation,
+            t.date_limite AS t_date_limite,
+            t.statut AS t_statut,
+
+             -- Infos du créateur
+              c.id AS createur_id,
+              c.nom AS createur_nom,
+              c.prenom AS createur_prenom,
+              c.mot_de_passe AS createur_mot_de_passe,
+              c.email AS createur_email,
+
+              -- Infos du superviseur
+              s.id AS superviseur_id,
+              s.nom AS superviseur_nom,
+              s.prenom AS superviseur_prenom,
+              s.mot_de_passe AS superviseur_mot_de_passe,
+              s.email AS superviseur_email,
+
+              -- Infos du responsable
+              r.id AS responsable_id,
+              r.nom AS responsable_nom,
+              r.prenom AS responsable_prenom,
+              r.mot_de_passe AS responsable_mot_de_passe,
+              r.email AS responsable_email
+
+          FROM tache t
+
+          LEFT JOIN utilisateur c ON t.createur_id = c.id
+          LEFT JOIN utilisateur s ON t.superviseur_id = s.id
+          LEFT JOIN utilisateur r ON t.responsable_id = r.id;]
+2025-06-05 15:48:40 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de lister  utilisateur org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM utilisateur]
+2025-06-05 15:48:40 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 15:48:41 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:48:41 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de créer un utilisateur org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar []
+2025-06-05 15:48:41 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:48:41 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de créer un utilisateur org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar []
+2025-06-05 15:48:41 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:48:41 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de créer un utilisateur org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar []
+2025-06-05 15:48:41 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de lister  utilisateur org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM utilisateur]
+2025-06-05 15:48:41 ERROR com.oslead.solutions.homeDutyTracker.dao.TacheDaoImpl - Erreur SQL : impossible de lister  utilisateur org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT 
+            t.id AS t_id,
+            t.nom AS t_nom,
+            t.description AS t_description,
+            t.date_creation AS t_date_creation,
+            t.date_limite AS t_date_limite,
+            t.statut AS t_statut,
+
+             -- Infos du créateur
+              c.id AS createur_id,
+              c.nom AS createur_nom,
+              c.prenom AS createur_prenom,
+              c.mot_de_passe AS createur_mot_de_passe,
+              c.email AS createur_email,
+
+              -- Infos du superviseur
+              s.id AS superviseur_id,
+              s.nom AS superviseur_nom,
+              s.prenom AS superviseur_prenom,
+              s.mot_de_passe AS superviseur_mot_de_passe,
+              s.email AS superviseur_email,
+
+              -- Infos du responsable
+              r.id AS responsable_id,
+              r.nom AS responsable_nom,
+              r.prenom AS responsable_prenom,
+              r.mot_de_passe AS responsable_mot_de_passe,
+              r.email AS responsable_email
+
+          FROM tache t
+
+          LEFT JOIN utilisateur c ON t.createur_id = c.id
+          LEFT JOIN utilisateur s ON t.superviseur_id = s.id
+          LEFT JOIN utilisateur r ON t.responsable_id = r.id;]
+2025-06-05 15:48:41 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de lister  utilisateur org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM utilisateur]
+2025-06-05 15:48:41 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 15:48:42 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 15:48:42 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de créer un utilisateur org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar []
+2025-06-05 15:48:42 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de lister  utilisateur org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM utilisateur]
+2025-06-05 15:48:42 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de lister  utilisateur org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT * FROM utilisateur]
+2025-06-05 15:50:33 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 15:50:34 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:50:34 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:50:35 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:50:35 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 15:50:35 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 15:50:35 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 15:50:36 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:50:36 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:50:36 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 15:50:36 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 15:50:36 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 16:11:01 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 16:11:02 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:11:02 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:11:03 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:11:03 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 16:11:03 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 16:11:03 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 16:11:04 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:11:04 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:11:04 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:11:04 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 16:11:05 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 16:14:04 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 16:14:06 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:14:06 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:14:06 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:14:06 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 16:14:06 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur inconnue lors du mapping d'une notification. java.sql.SQLException: Column 'n_date_creation' not found.
+2025-06-05 16:14:06 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 16:14:07 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:14:07 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:14:07 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:14:08 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 16:14:08 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 16:19:47 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 16:19:49 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:19:49 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:19:49 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:19:49 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 16:19:50 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:19:50 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:19:50 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:19:50 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 16:19:51 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 16:24:08 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 16:24:09 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:24:09 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:24:10 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:24:10 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 16:24:11 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:24:11 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:24:11 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:24:11 INFO  com.oslead.solutions.homeDutyTracker.dao.DatabaseSetupTest - Database creates: homeDutyTracker_dbTestDAO
+2025-06-05 16:24:11 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 16:32:06 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:32:07 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:32:08 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:40:12 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:40:13 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:40:14 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:40:14 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:40:14 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:40:14 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:40:15 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:40:15 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:40:15 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:40:15 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 16:41:45 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:41:46 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:41:47 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:41:47 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:41:47 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:41:47 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:41:48 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:41:48 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:41:48 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:41:48 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 16:53:27 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:53:29 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:53:29 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:53:29 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:53:30 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:53:30 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:53:31 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:53:31 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:53:31 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:53:31 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 16:55:15 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:55:17 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:55:17 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:55:17 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:55:17 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:55:18 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:55:18 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:55:18 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:55:18 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:55:19 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 16:57:00 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:57:02 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:57:02 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:57:02 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:57:02 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:57:03 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:57:03 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:57:03 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 16:57:03 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 16:57:03 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 17:11:43 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 17:11:45 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 17:11:46 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 17:11:46 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 17:11:46 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 17:11:47 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 17:11:47 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 17:11:47 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 17:11:47 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 17:11:48 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-05 17:13:10 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 17:13:12 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 17:13:12 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 17:13:12 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 17:13:12 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 17:13:13 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 17:13:13 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 17:13:13 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-05 17:13:13 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-05 17:13:13 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test

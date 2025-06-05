@@ -1,5 +1,6 @@
 package com.oslead.solutions.homeDutyTracker.dao;
 
+import com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal;
 import com.oslead.solutions.homeDutyTracker.dao.interfaces.INotificationDao;
 import com.oslead.solutions.homeDutyTracker.dao.interfaces.ITacheDao;
 import com.oslead.solutions.homeDutyTracker.dao.interfaces.IUtilisateurDao;
@@ -24,8 +25,10 @@ public class NotificationDaoTest {
 
     @BeforeAll
     static void setup() {
-        DatabaseSetupTest.createDatabaseIfNotExists();
-        ApplicationContext context = new ClassPathXmlApplicationContext("db/beans-test.xml");
+        // DatabaseSetupTestDatabaseSetupTest.createDatabaseIfNotExists();
+        //ApplicationContext context = new ClassPathXmlApplicationContext("db/beans-test.xml");
+        DatabaseSetupTestGlobal.createDatabaseIfNotExists();
+        ApplicationContext context = new ClassPathXmlApplicationContext("db-test-global/beans-test-global.xml");
         iTacheDao = context.getBean("tacheDao", ITacheDao.class);
         iUtilisateurDao = context.getBean("utilisateurDao", IUtilisateurDao.class);
         iNotificationDao = context.getBean("notificationDao", INotificationDao.class);
@@ -107,7 +110,9 @@ public class NotificationDaoTest {
        /* utilisateurs.stream()
                 .filter(u -> "alice.test@example.com".equals(u.getEmail()))
                 .forEach(u -> iUtilisateurDao.deleteById(u.getId()));*/
-        List<Notification> notifications = iNotificationDao.findAll();
+
+
+        /*List<Notification> notifications = iNotificationDao.findAll();
         notifications.stream()
                 .forEach(u -> iNotificationDao.deleteById(u.getIdentifiant()));
         List<Tache> taches = iTacheDao.findAll();
@@ -115,6 +120,6 @@ public class NotificationDaoTest {
                 .forEach(u -> iTacheDao.deleteById(u.getId()));
         List<Utilisateur> utilisateurs = iUtilisateurDao.findAll();
         utilisateurs.stream()
-                .forEach(u -> iUtilisateurDao.deleteById(u.getId()));
+                .forEach(u -> iUtilisateurDao.deleteById(u.getId()));*/
     }
 }

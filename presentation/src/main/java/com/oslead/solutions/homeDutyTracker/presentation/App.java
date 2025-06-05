@@ -7,10 +7,10 @@ import com.oslead.solutions.homeDutyTracker.domain.Enfant;
 import com.oslead.solutions.homeDutyTracker.domain.Parent;
 import com.oslead.solutions.homeDutyTracker.domain.Tache;
 import com.oslead.solutions.homeDutyTracker.domain.enumeration.StatutTache;
-import com.oslead.solutions.homeDutyTracker.service.NotificationServiceImpl;
+import com.oslead.solutions.homeDutyTracker.service.NotificationV1ServiceImpl;
 import com.oslead.solutions.homeDutyTracker.service.ParentServiceImpl;
-import com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl;
-import com.oslead.solutions.homeDutyTracker.service.UtilisateurServiceImpl;
+import com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl;
+import com.oslead.solutions.homeDutyTracker.service.UtilisateurServiceImplV1;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
@@ -35,7 +35,7 @@ public class App {
                 //e.printStackTrace();
             }
            // PropertyConfigurator.configure("log4j.properties");
-            String password= UtilisateurServiceImpl.hashPassword("1234567");
+            String password= UtilisateurServiceImplV1.hashPassword("1234567");
             Parent parent1= new Parent("Jean", "Cissé", "jean@cisse.com", password);
             Enfant enfant1= new Parent("Blaise", "Cissé", "blaise@cisse.com", password);
             Enfant enfant2= new Parent("Helene", "Cissé", "helene@cisse.com", password);
@@ -69,14 +69,14 @@ public class App {
             enfant2.setId(idEnfant2);
             if(idParent > 0 && idEnfant1 > 0 && idEnfant2>0) {
                 TacheDAOV1ImplV1 tacheDAOImplV1 = new TacheDAOV1ImplV1();
-                TacheServiceImpl tacheService = new TacheServiceImpl(tacheDAOImplV1);
+                TacheV1ServiceImpl tacheService = new TacheV1ServiceImpl(tacheDAOImplV1);
                 boolean isTacheCreated1 = tacheService.creerTache(tache1);
                 boolean isTacheCreated2 = tacheService.creerTache(tache2);
 
                 // System.out.println("Tâche créée avec succès !");
                 // logger.info("Tâche créée avec succès ! " + idParent);
                 NotificationDAOV1Impl notificationDAOImpl= new NotificationDAOV1Impl();
-                NotificationServiceImpl notificationService = new NotificationServiceImpl(notificationDAOImpl);
+                NotificationV1ServiceImpl notificationService = new NotificationV1ServiceImpl(notificationDAOImpl);
                 if (isTacheCreated1) {
                     logger.info("Notification de l'enfant " + enfant1.getPrenom() + " " + enfant1.getNom() + " " + notificationService.afficherHistoriqueNotification(enfant1));
                 }

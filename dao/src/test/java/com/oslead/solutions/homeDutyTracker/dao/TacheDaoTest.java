@@ -1,5 +1,6 @@
 package com.oslead.solutions.homeDutyTracker.dao;
 
+import com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal;
 import com.oslead.solutions.homeDutyTracker.dao.interfaces.ITacheDao;
 import com.oslead.solutions.homeDutyTracker.dao.interfaces.IUtilisateurDao;
 import com.oslead.solutions.homeDutyTracker.domain.Enfant;
@@ -25,8 +26,11 @@ public class TacheDaoTest {
 
     @BeforeAll
     static void setup() {
-        DatabaseSetupTest.createDatabaseIfNotExists();
-        ApplicationContext context = new ClassPathXmlApplicationContext("db/beans-test.xml");
+       /* DatabaseSetupTest.createDatabaseIfNotExists();
+        ApplicationContext context = new ClassPathXmlApplicationContext("db/beans-test.xml");*/
+        DatabaseSetupTestGlobal.createDatabaseIfNotExists();
+        ApplicationContext context = new ClassPathXmlApplicationContext("db-test-global/beans-test-global.xml");
+
         iTacheDao = context.getBean("tacheDao", ITacheDao.class);
         iUtilisateurDao = context.getBean("utilisateurDao", IUtilisateurDao.class);
     }
@@ -107,11 +111,13 @@ public class TacheDaoTest {
        /* utilisateurs.stream()
                 .filter(u -> "alice.test@example.com".equals(u.getEmail()))
                 .forEach(u -> iUtilisateurDao.deleteById(u.getId()));*/
-        List<Tache> taches = iTacheDao.findAll();
+
+
+        /*List<Tache> taches = iTacheDao.findAll();
         taches.stream()
                 .forEach(u -> iTacheDao.deleteById(u.getId()));
         List<Utilisateur> utilisateurs = iUtilisateurDao.findAll();
         utilisateurs.stream()
-                .forEach(u -> iUtilisateurDao.deleteById(u.getId()));
+                .forEach(u -> iUtilisateurDao.deleteById(u.getId()));*/
     }
 }

@@ -2,7 +2,7 @@ package com.oslead.solutions.homeDutyTracker.presentation;
 
 import com.oslead.solutions.homeDutyTracker.dao.TacheDAOV1ImplV1;
 import com.oslead.solutions.homeDutyTracker.domain.Tache;
-import com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl;
+import com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -26,7 +26,7 @@ public class TacheTableUI {
 
         TacheDAOV1ImplV1 tacheDAOImplV1 = new TacheDAOV1ImplV1();
         // Récupérer les données depuis la base
-        TacheServiceImpl tacheService = new TacheServiceImpl(tacheDAOImplV1);
+        TacheV1ServiceImpl tacheService = new TacheV1ServiceImpl(tacheDAOImplV1);
         List<Tache> taches = tacheService.afficherListTache();
 
         // Convertir les données en tableau d’objets pour JTable

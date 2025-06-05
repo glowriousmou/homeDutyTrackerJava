@@ -42,7 +42,7 @@ public class NotificationDaoImpl implements INotificationDao {
             );
             notification.setIdentifiant(rs.getInt("n_id"));
             notification.setMessage(rs.getString("n_message"));
-            notification.setDateCreation(  rs.getTimestamp("n_date_creation").toLocalDateTime());
+            notification.setDateCreation(  rs.getTimestamp("n_date_creation" ).toLocalDateTime());
             notification.setTache(tache);
 
         } catch (Exception e) {
@@ -81,7 +81,7 @@ public class NotificationDaoImpl implements INotificationDao {
             String sql = " SELECT \n" +
                     "            n.id AS n_id,\n" +
                     "            n.message AS n_message,\n" +
-                    "            n.date_creation AS n_dateCreation,\n" +
+                    "            n.date_creation AS n_date_creation,\n" +
                     "\n" +
                     "             -- Infos de la tache\n" +
                     "              t.id AS tache_id,\n" +

@@ -6,7 +6,7 @@ import com.oslead.solutions.homeDutyTracker.service.interfaces.IGestionParent;
 import org.apache.log4j.Logger;
 
 public class ParentServiceImpl implements IGestionParent {
-    private static final Logger logger = Logger.getLogger(TacheServiceImpl.class);
+    private static final Logger logger = Logger.getLogger(TacheV1ServiceImpl.class);
     // private TacheDAOImpl tacheDAOImpl = new TacheDAOImpl();
     private final UtilisateurDAOImplV1 utilisateurDAOImplV1;
 

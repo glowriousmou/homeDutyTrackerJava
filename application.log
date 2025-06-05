@@ -17,32 +17,32 @@
 2025-05-25 19:18:39 ERROR com.oslead.solutions.homeDutyTracker.presentation.App - Une erreur s'est produite lors de la création des utilisateurs 
 2025-05-25 19:20:37 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - database info jdbc:mysql://localhost:3306/ root
 2025-05-25 19:20:39 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
-2025-05-25 19:20:40 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
-2025-05-25 19:20:40 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
+2025-05-25 19:20:40 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
+2025-05-25 19:20:40 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
 2025-05-25 19:20:40 INFO  com.oslead.solutions.homeDutyTracker.presentation.App - Tâche créée avec succès ! 10
 2025-05-25 19:20:40 INFO  com.oslead.solutions.homeDutyTracker.presentation.App - Notification de l'enfant Blaise Cissé [Notification{identifiant='3', message='le parent Jean Cissé a marqué la tache Menage comme INITIALIZED', dateCreation='2025-05-25T19:20:40'}]
 2025-05-25 20:58:05 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - database info jdbc:mysql://localhost:3306/ root
 2025-05-25 20:58:07 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
-2025-05-25 20:58:07 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
-2025-05-25 20:58:08 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
+2025-05-25 20:58:07 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
+2025-05-25 20:58:08 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
 2025-05-25 20:58:08 INFO  com.oslead.solutions.homeDutyTracker.presentation.App - Notification de l'enfant Blaise Cissé [Notification{identifiant='5', message='le parent Jean Cissé a marqué la tache Menage comme INITIALIZED', dateCreation='2025-05-25T20:58:08'}]
 2025-05-25 21:02:26 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - database info jdbc:mysql://localhost:3306/ root
 2025-05-25 21:02:28 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
-2025-05-25 21:02:28 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
-2025-05-25 21:02:28 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
+2025-05-25 21:02:28 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
+2025-05-25 21:02:28 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
 2025-05-25 21:02:28 INFO  com.oslead.solutions.homeDutyTracker.presentation.App - Notification de l'enfant Blaise Cissé [Notification{identifiant='7', message='le parent Jean Cissé a marqué la tache Menage comme INITIALIZED', dateCreation='2025-05-25T21:02:29'}]
 2025-05-25 21:03:34 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - database info jdbc:mysql://localhost:3306/ root
 2025-05-25 21:03:36 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
-2025-05-25 21:03:36 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
-2025-05-25 21:03:36 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
+2025-05-25 21:03:36 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
+2025-05-25 21:03:36 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
 2025-05-25 21:03:36 INFO  com.oslead.solutions.homeDutyTracker.presentation.App - Notification de l'enfant Blaise Cissé [Notification{identifiant='9', message='le parent Jean Cissé a marqué la tache Menage comme INITIALIZED', dateCreation='2025-05-25T21:03:37'}]
 2025-05-25 21:04:22 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - database info jdbc:mysql://localhost:3306/ root
 2025-05-25 21:04:24 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
-2025-05-25 21:04:25 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
-2025-05-25 21:04:25 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
+2025-05-25 21:04:25 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
+2025-05-25 21:04:25 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
 2025-05-25 21:04:25 INFO  com.oslead.solutions.homeDutyTracker.presentation.App - Notification de l'enfant Blaise Cissé [Notification{identifiant='11', message='le parent Jean Cissé a marqué la tache Menage comme INITIALIZED', dateCreation='2025-05-25T21:04:25'}]
 2025-05-25 21:06:03 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - database info jdbc:mysql://localhost:3306/ root
 2025-05-25 21:06:04 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
-2025-05-25 21:06:04 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
-2025-05-25 21:06:04 INFO  com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl - Tâche créée avec succès !
+2025-05-25 21:06:04 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
+2025-05-25 21:06:04 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
 2025-05-25 21:06:04 INFO  com.oslead.solutions.homeDutyTracker.presentation.App - Notification de l'enfant Blaise Cissé [Notification{identifiant='13', message='le parent Jean Cissé a marqué la tache Menage comme INITIALIZED', dateCreation='2025-05-25T21:06:05'}]

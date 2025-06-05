@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS homeDutyTracker_dbTestDAO;
+CREATE DATABASE IF NOT EXISTS homeDutyTracker_dbTest;
 
-USE homeDutyTracker_dbTestDAO;
+USE homeDutyTracker_dbTest;
 
 CREATE TABLE IF NOT EXISTS utilisateur (
      id INT PRIMARY KEY AUTO_INCREMENT,
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS utilisateur (
      mot_de_passe VARCHAR(100)
  );
 
- CREATE TABLE IF NOT EXISTS tache (
+ CREATE TABLE IF NOT EXISTS  tache (
      id INT PRIMARY KEY AUTO_INCREMENT,
      nom VARCHAR(100),
      description TEXT,

@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+    <import resource="classpath:db-test-global/beans-test-global.xml" />
+    <bean id="utilisateurService" class="com.oslead.solutions.homeDutyTracker.service.UtilisateurServiceImpl">
+           <constructor-arg ref="utilisateurDao"/>
+       </bean>
+    <bean id="tacheService" class="com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl">
+           <constructor-arg ref="tacheDao"/>
+       </bean>
+    <bean id="notificationService" class="com.oslead.solutions.homeDutyTracker.service.NotificationServiceImpl">
+           <constructor-arg ref="notificationDao"/>
+       </bean>
+
+</beans>

@@ -1,37 +1,28 @@
 package com.oslead.solutions.homeDutyTracker.service;
 
-import com.oslead.solutions.homeDutyTracker.dao.NotificationDAOV1Impl;
+
+
+import com.oslead.solutions.homeDutyTracker.dao.interfaces.INotificationDao;
 import com.oslead.solutions.homeDutyTracker.domain.Notification;
-import com.oslead.solutions.homeDutyTracker.domain.Utilisateur;
-import com.oslead.solutions.homeDutyTracker.service.interfaces.IGestionNotification;
-import org.apache.log4j.Logger;
+import com.oslead.solutions.homeDutyTracker.service.interfaces.INotificationService;
 
 import java.util.List;
 
-public class NotificationServiceImpl implements IGestionNotification
-{
-    private static final Logger logger = Logger.getLogger(NotificationServiceImpl.class);
-    private final NotificationDAOV1Impl notificationDAOImpl;
+public class NotificationServiceImpl implements INotificationService {
+    private final INotificationDao notificationDao;
 
-    public NotificationServiceImpl(NotificationDAOV1Impl notificationDAOImpl) {
-        this.notificationDAOImpl = notificationDAOImpl;
+    public NotificationServiceImpl(INotificationDao notificationDao) {
+        this.notificationDao = notificationDao;
     }
 
     @Override
-    public int creerNotification(Notification notification) throws Exception {
-        return notificationDAOImpl.create(notification);
+    public int enregistrerNotification(Notification notification) {
+        // Business rule can be added here
+        return notificationDao.save(notification);
     }
 
     @Override
-    public List<Notification> afficherHistoriqueNotification(Utilisateur utilisateur) throws Exception  {
-        List<Notification> listAllNotification = notificationDAOImpl.getAll();
-        return listAllNotification.stream()
-                .filter(n -> n.getTache().getResponsable().getId() == utilisateur.getId())
-                .toList();
-//        db.stream() transforme la liste simulée de notifications en flux.
-//        .filter(...) garde uniquement les notifications destinées à l'utilisateur.
-//        .toList() retourne le résultat filtré sous forme de liste.
-
-
+    public List<Notification> listerNotifications() {
+        return notificationDao.findAll();
     }
 }
