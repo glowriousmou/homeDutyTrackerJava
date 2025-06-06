@@ -37,4 +37,17 @@
         <property name="dataSource" ref="dataSource" />
     </bean>
 
+    <bean id="utilisateurDao" class="com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl">
+        <constructor-arg ref="jdbcTemplate"/>
+    </bean>
+
+    <bean id="tacheDao" class="com.oslead.solutions.homeDutyTracker.dao.TacheDaoImpl">
+        <constructor-arg ref="jdbcTemplate"/>
+    </bean>
+
+    <bean id="notificationDao" class="com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl">
+        <constructor-arg ref="jdbcTemplate"/>
+    </bean>
+
+
 </beans>

@@ -6,7 +6,7 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd">
-    <import resource="classpath:db/beans.xml" />
+    <import resource="classpath:db-test-global/beans-test-global.xml" />
     <bean id="utilisateurService" class="com.oslead.solutions.homeDutyTracker.service.UtilisateurServiceImpl">
            <constructor-arg ref="utilisateurDao"/>
        </bean>

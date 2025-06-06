@@ -1,8 +1,13 @@
 package com.oslead.solutions.homeDutyTracker.presentation;
 
-import com.oslead.solutions.homeDutyTracker.dao.TacheDAOV1ImplV1;
+
+import com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup;
 import com.oslead.solutions.homeDutyTracker.domain.Tache;
-import com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl;
+import com.oslead.solutions.homeDutyTracker.service.interfaces.ITacheService;
+import com.oslead.solutions.homeDutyTracker.service.interfaces.IUtilisateurService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -10,8 +15,13 @@ import java.awt.*;
 import java.util.List;
 
 public class TacheTableUI {
-
+    private static ITacheService iTacheService;
     public static void tableLayout() throws Exception {
+
+        DatabaseSetup.createDatabaseIfNotExists();
+        ApplicationContext context = new ClassPathXmlApplicationContext("db/beans-service.xml");
+        iTacheService = context.getBean("tacheService", ITacheService.class);
+
         JFrame frame = new JFrame("Liste des tâches");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(900, 500);
@@ -24,10 +34,11 @@ public class TacheTableUI {
         // Colonnes du tableau
         String[] columnNames = {"Nom", "Description", "Date de création", "Date limite", "Statut", "Créateur","superviseur", "responsable"};
 
-        TacheDAOV1ImplV1 tacheDAOImplV1 = new TacheDAOV1ImplV1();
+       /* TacheDAOV1ImplV1 tacheDAOImplV1 = new TacheDAOV1ImplV1();
         // Récupérer les données depuis la base
         TacheV1ServiceImpl tacheService = new TacheV1ServiceImpl(tacheDAOImplV1);
-        List<Tache> taches = tacheService.afficherListTache();
+        List<Tache> taches = tacheService.afficherListTache();*/
+        List<Tache> taches = iTacheService.listerTaches();
 
         // Convertir les données en tableau d’objets pour JTable
         Object[][] data = new Object[taches.size()][columnNames.length];

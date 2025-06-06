@@ -42,7 +42,7 @@ public class UtilisateurDaoImpl implements IUtilisateurDao {
     public int save(Utilisateur user)  {
         try {
             String sql = "INSERT INTO utilisateur (nom, prenom, email, mot_de_passe) VALUES (?, ?, ?, ?)";
-            logger.info("eeee "+user.getNom());
+            //logger.info("eeee "+user.getNom());
             KeyHolder keyHolder = new GeneratedKeyHolder();
             // jdbcTemplate.update(sql, user.getNom(), user.getPrenom(), user.getEmail(), user.getMotPasse());
             String password= hashPassword( user.getMotPasse());

@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS homeDutyTracker_dbV2;
+CREATE DATABASE IF NOT EXISTS homeDutyTracker_db;
 
-USE homeDutyTracker_dbV2;
+USE homeDutyTracker_db;
 
 CREATE TABLE IF NOT EXISTS utilisateur (
      id INT PRIMARY KEY AUTO_INCREMENT,

@@ -11,34 +11,52 @@
 2025-06-05 16:24:17 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 16:24:18 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 16:24:18 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
-2025-06-05 16:24:18 INFO  com.oslead.solution.homeDutyTracker.service.NotificationServiceTest - testEnregistrerUtilisateur ok
+2025-06-05 16:24:18 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
 2025-06-05 16:40:20 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
 2025-06-05 16:41:53 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
 2025-06-05 16:41:54 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 16:41:54 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 16:41:54 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
-2025-06-05 16:41:55 INFO  com.oslead.solution.homeDutyTracker.service.NotificationServiceTest - testEnregistrerUtilisateur ok
+2025-06-05 16:41:55 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
 2025-06-05 16:53:44 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
 2025-06-05 16:53:46 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
 2025-06-05 16:53:47 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 16:53:48 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 16:53:48 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
-2025-06-05 16:53:48 INFO  com.oslead.solution.homeDutyTracker.service.NotificationServiceTest - testEnregistrerUtilisateur ok
+2025-06-05 16:53:48 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
 2025-06-05 16:55:25 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
 2025-06-05 16:55:27 ERROR com.oslead.solutions.homeDutyTracker.dao.TacheDaoImpl - Erreur inconnue lors de la création d'une tache. java.lang.NullPointerException: Cannot invoke "com.oslead.solutions.homeDutyTracker.domain.Parent.getId()" because the return value of "com.oslead.solutions.homeDutyTracker.domain.Tache.getCreateur()" is null
 2025-06-05 16:55:27 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
 2025-06-05 16:55:28 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 16:55:28 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 16:55:28 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
-2025-06-05 16:55:28 INFO  com.oslead.solution.homeDutyTracker.service.NotificationServiceTest - testEnregistrerUtilisateur ok
+2025-06-05 16:55:28 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
 2025-06-05 16:57:09 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
 2025-06-05 16:57:11 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 16:57:11 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 16:57:11 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
-2025-06-05 16:57:11 INFO  com.oslead.solution.homeDutyTracker.service.NotificationServiceTest - testEnregistrerUtilisateur ok
+2025-06-05 16:57:11 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
 2025-06-05 17:11:54 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
 2025-06-05 17:13:17 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
 2025-06-05 17:13:19 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 17:13:19 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 17:13:19 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
-2025-06-05 17:13:19 INFO  com.oslead.solution.homeDutyTracker.service.NotificationServiceTest - testEnregistrerUtilisateur ok
+2025-06-05 17:13:19 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
+2025-06-06 11:32:57 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:32:58 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
+2025-06-06 11:41:13 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:41:15 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
+2025-06-06 11:48:50 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:48:52 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
+2025-06-06 11:55:14 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:55:16 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
+2025-06-06 11:58:44 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:58:45 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
+2025-06-06 12:05:24 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 12:05:26 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
+2025-06-06 12:27:49 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 12:27:51 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
+2025-06-06 12:32:07 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 12:32:09 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok
+2025-06-06 13:00:52 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 13:00:55 INFO  com.oslead.solution.homeDutyTracker.service.ServiceTest - testEnregistrerUtilisateur ok

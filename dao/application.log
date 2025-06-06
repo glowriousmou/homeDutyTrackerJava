@@ -312,3 +312,30 @@
 2025-06-05 17:13:13 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
 2025-06-05 17:13:13 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
 2025-06-05 17:13:13 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Test
+2025-06-06 11:32:49 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:32:51 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:32:52 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:41:06 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:41:08 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:41:09 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:48:43 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:48:45 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:48:46 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:55:05 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:55:07 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:55:09 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:58:36 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:58:38 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 11:58:39 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 12:05:16 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 12:05:18 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 12:05:19 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 12:27:42 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 12:27:44 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 12:27:45 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 12:31:59 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 12:32:01 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 12:32:02 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 13:00:41 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 13:00:43 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest
+2025-06-06 13:00:44 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal - Database creates: homeDutyTracker_dbTest

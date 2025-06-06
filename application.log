@@ -46,3 +46,60 @@
 2025-05-25 21:06:04 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
 2025-05-25 21:06:04 INFO  com.oslead.solutions.homeDutyTracker.service.TacheV1ServiceImpl - Tâche créée avec succès !
 2025-05-25 21:06:04 INFO  com.oslead.solutions.homeDutyTracker.presentation.App - Notification de l'enfant Blaise Cissé [Notification{identifiant='13', message='le parent Jean Cissé a marqué la tache Menage comme INITIALIZED', dateCreation='2025-05-25T21:06:05'}]
+2025-06-06 11:10:42 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db
+2025-06-06 11:10:44 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-06 11:10:44 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de créer un utilisateur org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar []
+2025-06-06 11:10:44 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-06 11:10:44 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de créer un utilisateur org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar []
+2025-06-06 11:10:44 INFO  com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - eeee Cissé
+2025-06-06 11:10:44 ERROR com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl - Erreur SQL : impossible de créer un utilisateur org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar []
+2025-06-06 11:14:30 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db
+2025-06-06 11:14:32 ERROR com.oslead.solutions.homeDutyTracker.dao.NotificationDaoImpl - Erreur SQL : impossible de créer une notification org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; Cannot add or update a child row: a foreign key constraint fails (`homedutytracker_db`.`notification`, CONSTRAINT `notification_ibfk_1` FOREIGN KEY (`tache_id`) REFERENCES `tache` (`id`))
+2025-06-06 11:18:12 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db
+2025-06-06 11:19:00 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db
+2025-06-06 11:19:02 INFO  com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - Connexion réussie !
+2025-06-06 11:19:02 ERROR com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - Erreur de connexion à la base de données : Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Failed to parse the host:port pair 'localhost:3306homeDutyTracker_db'.
+2025-06-06 11:19:02 ERROR com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - Erreur lors de l'initialisation des table : Cannot invoke "java.sql.Connection.createStatement()" because "con" is null
+2025-06-06 11:19:02 ERROR com.oslead.solutions.homeDutyTracker.dao.database.ConnexionDB - Erreur de connexion à la base de données : Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Failed to parse the host:port pair 'localhost:3306homeDutyTracker_db'.
+2025-06-06 11:19:02 ERROR com.oslead.solutions.homeDutyTracker.dao.TacheDAOV1ImplV1 - Erreur inconnue lors de la récupération de la liste des taches. java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "con" is null
+2025-06-06 11:24:52 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db
+2025-06-06 11:24:54 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db
+2025-06-06 12:45:00 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db
+2025-06-06 12:45:02 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db
+2025-06-06 12:50:10 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db
+2025-06-06 12:50:11 ERROR com.oslead.solutions.homeDutyTracker.presentation.App - Une erreur critique s’est produite dans l’application.
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceInitializer' defined in class path resource [db/beans.xml]: Cannot read SQL script from class path resource [db/schema.sql]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:604)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1169)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:617)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:85)
+	at com.oslead.solutions.homeDutyTracker.presentation.App.main(App.java:42)
+Caused by: org.springframework.jdbc.datasource.init.CannotReadScriptException: Cannot read SQL script from class path resource [db/schema.sql]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:239)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.jdbc.datasource.init.DataSourceInitializer.execute(DataSourceInitializer.java:110)
+	at org.springframework.jdbc.datasource.init.DataSourceInitializer.afterPropertiesSet(DataSourceInitializer.java:95)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1860)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1809)
+	... 14 more
+Caused by: java.io.FileNotFoundException: class path resource [db/schema.sql] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:212)
+	at org.springframework.core.io.support.EncodedResource.getReader(EncodedResource.java:144)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.readScript(ScriptUtils.java:328)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:236)
+	... 20 more
+2025-06-06 12:51:29 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db
+2025-06-06 12:51:31 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db
+2025-06-06 12:51:39 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db
+2025-06-06 12:51:41 INFO  com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetup - Database creates: homeDutyTracker_db

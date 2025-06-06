@@ -1,15 +1,9 @@
 package com.oslead.solution.homeDutyTracker.service;
 
-import com.oslead.solutions.homeDutyTracker.dao.UtilisateurDaoImpl;
+
 import com.oslead.solutions.homeDutyTracker.dao.database.DatabaseSetupTestGlobal;
-import com.oslead.solutions.homeDutyTracker.dao.interfaces.INotificationDao;
-import com.oslead.solutions.homeDutyTracker.dao.interfaces.ITacheDao;
-import com.oslead.solutions.homeDutyTracker.dao.interfaces.IUtilisateurDao;
 import com.oslead.solutions.homeDutyTracker.domain.*;
 import com.oslead.solutions.homeDutyTracker.domain.enumeration.StatutTache;
-import com.oslead.solutions.homeDutyTracker.service.NotificationServiceImpl;
-import com.oslead.solutions.homeDutyTracker.service.TacheServiceImpl;
-import com.oslead.solutions.homeDutyTracker.service.UtilisateurServiceImpl;
 import com.oslead.solutions.homeDutyTracker.service.interfaces.INotificationService;
 import com.oslead.solutions.homeDutyTracker.service.interfaces.ITacheService;
 import com.oslead.solutions.homeDutyTracker.service.interfaces.IUtilisateurService;
@@ -25,8 +19,8 @@ import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class NotificationServiceTest {
-    private static final Logger logger = Logger.getLogger(NotificationServiceTest.class);
+public class ServiceTest {
+    private static final Logger logger = Logger.getLogger(ServiceTest.class);
 
 
 
@@ -46,7 +40,7 @@ public class NotificationServiceTest {
     @BeforeEach
     void setup() {
         DatabaseSetupTestGlobal.createDatabaseIfNotExists();
-        ApplicationContext context = new ClassPathXmlApplicationContext("db/beans-service.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("db-test/beans-test-service.xml");
         iUtilisateurService = context.getBean("utilisateurService", IUtilisateurService.class);
         iTacheService = context.getBean("tacheService", ITacheService.class);
         iNotificationService = context.getBean("notificationService", INotificationService.class);
@@ -62,9 +56,9 @@ public class NotificationServiceTest {
     }
     @Test
     void testEnregistrerUtilisateur() {
-        Parent _createur= new Parent("Patrick", "Cissé", "patrick@cisse-test-service.com", UtilisateurDaoImpl.hashPassword("1234567"));
-        Enfant _responsable= new Parent("Alphonse", "Cissé", "alphonse@cisse-test-service.com", UtilisateurDaoImpl.hashPassword("1234567"));
-        Enfant _superviseur= new Parent("Germaine", "Cissé", "germaine@cisse-test-service.com", UtilisateurDaoImpl.hashPassword("1234567"));
+        Parent _createur= new Parent("Patrick", "Cissé", "patrick@cisse-test-service.com", "1234567");
+        Enfant _responsable= new Parent("Alphonse", "Cissé", "alphonse@cisse-test-service.com", "1234567");
+        Enfant _superviseur= new Parent("Germaine", "Cissé", "germaine@cisse-test-service.com", "1234567");
         int createurId = iUtilisateurService.enregistrerUtilisateur(_createur);
         _createur.setId(createurId);
 
